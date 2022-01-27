@@ -1,6 +1,7 @@
-<h1 align="center">
-  <img  width=200 src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/logo.png"/><br>
-  :sparkles:Awesome Love Code:sparkles:<br>❤️表白代码收藏馆❤️<h1>
+<div align="center">
+<img  width=200 src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/logo.png"/>
+<h1>:sparkles:Awesome Love Code:sparkles:<br>❤️表白代码收藏馆❤️</h1> 
+</div>
 
 # 预览
 
