@@ -22,7 +22,7 @@
     <td>
         <a href="https://sun0225sun.github.io/Awesome-Love-Code/003-love_letter">
             <p align="center">003-love_letter</p>
-            <img src="httpscdn.jsdelivr.netghsun0225SUNAwesome-Love-Codeassets202201282031986.jpg"/>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/202201282031986.jpg"/>
         </a>
     </td>
     </tr>
