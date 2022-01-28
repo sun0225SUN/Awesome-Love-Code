@@ -6,11 +6,24 @@
 # 预览
 
 <table align="center">
-    <tr><td valign="top">
+    <tr>
+    <td>
         <a href="https://sun0225sun.github.io/Awesome-Love-Code/001-sincere_heart">
-            <p align="center">真挚的心</p>
+            <p align="center">001-sincere_heart</p>
             <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/202201271431597.jpg"/>
         </a>
-        </td>
-</tr>
+    </td>
+    <td>
+        <a href="https://sun0225sun.github.io/Awesome-Love-Code/002-love_rose">
+            <p align="center">002-love_rose</p>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/202201282018839.jpg"/>
+        </a>
+    </td>
+    <td>
+        <a href="https://sun0225sun.github.io/Awesome-Love-Code/003-love_letter">
+            <p align="center">003-love_letter</p>
+            <img src="httpscdn.jsdelivr.netghsun0225SUNAwesome-Love-Codeassets202201282031986.jpg"/>
+        </a>
+    </td>
+    </tr>
 </table>
