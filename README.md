@@ -9,17 +9,17 @@
 <tr>
   
 <td valign="top">
-<p align="center">真挚的心<p>
+<p align="center">真挚的心</p>
 <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/202201271431597.jpg"/>
 </td>
   
 <td>
-<p align="center">真挚的心<p>
+<p align="center">真挚的心</p>
 <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/202201271431597.jpg"/>
 </td>
 
 <td>
-<p align="center">真挚的心<p>
+<p align="center">真挚的心</p>
 <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/202201271431597.jpg"/>
 </td>
 
