@@ -1,0 +1,257 @@
+
+/* Left & Right alignment */
+
+.left { float:left;}
+.right { float:right;}
+.wrapper {width:100%; overflow:hidden;}
+.relative{ position:relative;}
+
+/* Global properties ======================================================== */
+
+body{ background: url(../images/bg.jpg) no-repeat top center; border:0; font:12px 'Droid Sans', sans-serif; color:#939090; line-height:21px; min-width:946px; overflow:hidden}
+
+.css3{border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; box-shadow: 0 0 4px rgba(0, 0, 0, .4); -moz-box-shadow: 0 0 4px rgba(0, 0, 0, .4); -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, .4); position: relative;}
+
+.page_spinner{ position:absolute;background: url(../images/bg.gif) ; z-index:99; width:100%; height:100%; top:0; left:0}
+.page_spinner div{ position:absolute;background: url(../images/loader.gif) 50% 50% no-repeat;width:100%; height:100%; top:0; left:0}
+
+.left_block{ float:left; width:220px; background:#fff;}
+
+/* Global Structure ============================================================= */
+
+.main {	margin: 0 auto;	width: 946px; position:relative; }
+
+.centre{margin-top:0; position:relative;}
+
+body, html{ height:100%;}
+.over{ position:relative; width:100%; overflow:hidden;min-height:100%; height:auto !important;}
+
+.bg1{ position:absolute; left:0; width:100%; height:64px; background:url(../images/bg_footer.png) 0 0 repeat-x; bottom:0}
+
+/* ============================= main layout ====================== */
+
+a{ color:#939090; text-decoration: none; outline:none}
+a:hover{}
+h1{ position:absolute; top:184px; left:329px; z-index:10}
+h2{ font:30px 'Amatic SC', cursive; line-height:1.2em; padding:0 0 24px 0; color:#3e3434; text-align:center; letter-spacing:-3px; font-weight:bold; text-shadow:0 0 #3e3434; font-family:"微软雅黑"}
+h2 span{ display:block; font-size:24px; color:#766f6f; line-height:1.2em; letter-spacing:-1px; text-shadow:0 0 #766f6f; padding-bottom:4px;}
+p{ padding-bottom:18px;}
+
+/* ============================= header ====================== */
+header{}
+
+#logo{ display:block;}
+#logo img{ position:relative; top:25px; left:25px}
+
+
+.menu{}
+#menu {}
+#menu > li { position:absolute;}
+#menu > li > img{ position:relative; z-index:6; top:15px; left:15px;}
+#menu > li > span{ position: absolute; width:145px; top:82px; color:#fff; text-align:center;  left:15px; text-shadow:1px 1px rgba(0,0,0,.2); z-index:9}
+
+#nav1{ top:105px; left:304px;}
+#nav2{ top:239px; left:230px;}
+#nav3{ top:372px; left:304px;}
+#nav4{ top:372px; left:458px;}
+#nav5{ top:239px; left:536px;}
+#nav6{ top:105px; left:458px;}
+
+#navigation{ position:absolute; z-index:12; top:120px; left:245px; height:424px; width:451px;}
+
+.submenu{ position:absolute; top:113px; left:-98px; z-index:13;}
+.submenu ul{ background:url(../images/bg_submenu.gif) repeat; padding:16px 5px; width:122px; position:relative; border-radius: 20px; -moz-border-radius: 20px; -webkit-border-radius: 20px;}
+.submenu li{ line-height:40px; position:relative;}
+.submenu a{ position:relative; color:#fff; display:block; padding:0 23px;}
+.submenu img{ position:absolute; width:100%; height:0; top:20px; left:0}
+
+/* ============================= content ====================== */
+
+#content{ height:636px; padding-bottom:64px;}
+#content > ul > li{ position:relative; left:225px; top:27px; width:100%;}
+
+.bg_cont{ position:absolute; top:0; left:0; z-index:1}
+
+.pad{ position:relative; z-index:2; left:94px; top:110px; width:388px; height:430px; font-size: 16px; line-height: 32px;}
+
+.link1{ position:relative;}
+.link1 span{ position: absolute; bottom:0; left:0; width:0; height:1px;}
+
+.back{ position:absolute; top:212px; left:163px; z-index:6}
+.back img{ position: relative; top:15px; left:15px;}
+.back a{ position:absolute; top:85px; left:15px; color:#fff; text-align:center; width:145px; text-shadow:1px 1px rgba(0,0,0,.4)}
+
+
+.color1{ color:#3e3434}
+
+.pad_bot1{ padding-bottom:12px;}
+.pad_left1{ padding-left:35px;}
+.marg_right1{ margin-right:20px;}
+
+#icons{ padding-top:28px; text-align:center}
+#icons li{ display:inline-block; margin-top:-12px; margin-right:5px;}
+#icons a{ display:block; position:relative;}
+#icons .img_act{ position:absolute; top:0; left:0}
+
+.scroll{height:308px; width:362px; overflow:hidden;}
+.track{ width:22px; height:287px; padding:24px 0; top:28px !important; left:366px !important; background: url(../images/scroll_track.jpg) 0 0 no-repeat}
+.shuttle{ width:16px; height:16px; background: url(../images/scroll_drag.png) 0 0 no-repeat; margin-left:3px;}
+._up-butt, ._down-butt{ height:0px !important;}
+
+.gallery{}
+.gallery li{ float:left; margin-bottom:13px; margin-right:14px;}
+.gallery a{ display:block; position:relative;}
+.gallery .last{ margin-bottom:0;}
+.gallery span{ position:absolute; top:0; left:0; background:url(../images/border1.png) 0 0 no-repeat; width:100%; height:100%;}
+
+.comments{ float:right; margin-left:20px; line-height:26px; margin-top:7px;}
+.comments strong{ float:left; margin-right:2px; background:url(../images/bg_comments.png) 0 0 no-repeat; color:#fff; width:40px; text-align:center; font-weight:normal}
+
+.date{ float:left; width:41px; height:34px; background:#ececec; border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; line-height:16px; color:#3e3434; padding:3px 0; text-transform:uppercase; text-align:center; margin-right:14px;}
+
+.blog{ width:100%; height:260px; overflow:hidden; margin-bottom:15px}
+
+.next, .prev{ float:left; color:#3e3435; line-height:24px; padding:0 7px; margin-right:9px; margin-left:10px; background-color:#ececec; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; position:relative;}
+.prev{ margin-left:15px;}
+
+.pagin{ float:left;}
+.pagin a{ float: left; font-size:11px; width:24px; line-height:24px; color:#1b1b1b; text-align:center; margin-left:1px; margin-right:1px;background-color:#ececec; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; position:relative;}
+
+.google_map{width:384px; height:303px;  position:relative; z-index:1; background:#fff;  margin-bottom:21px;border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; overflow:hidden;}
+
+.col1{ width: 164px; float:left;}
+
+/* ============================= footer ====================== */
+
+footer { color:#000000; padding-top:21px;}
+footer a{ color:#000000}
+footer a:hover{}
+
+.social{ float:right;}
+.social li{ float:left; margin-right:9px; padding-right:10px; background:url(../images/footer_line.gif) right 6px no-repeat}
+.social .last{ background:none; margin-right:0; padding-right:0}
+.social a{ position:relative;}
+.social span{ position: absolute; bottom:0; left:0; width:0; height:1px;}
+
+
+
+/* ============================= forms ============================= */
+
+#ContactForm{}
+#ContactForm .wrapper{ overflow:inherit; min-height:40px;}
+#ContactForm .success{ padding-bottom:15px; display:none}
+#ContactForm label{ position:relative;min-height:22px; display: inline-block;}
+#ContactForm .message{ height:222px;}
+#ContactForm  span{ display:block}
+#ContactForm .error, #ContactForm .empty{ font-size:10px; color:#4d820a; line-height:14px; display:none; width:100%}
+#ContactForm a{ margin-left:20px; float:right;}
+#ContactForm .input { margin:0;width:181px; height:15px; background: none; padding:3px 10px;color:#474747; font:13px "Trebuchet MS", Arial, Helvetica, sans-serif;}
+#ContactForm textarea { overflow: auto; margin:0;resize:none}
+
+
+#ContactForm  .bg{ background:#fff; border-top:1px solid #c2c2c2; border-left:1px solid #c2c2c2; position:relative;border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px; display:inline-block;}
+
+/* ============================= forms ============================= */
+
+#ContactForm{ position:relative;}
+#ContactForm .wrapper{ overflow:inherit; min-height:50px;}
+#ContactForm .success{ display:none; position:absolute; bottom:0; left:0; color:#fff}
+#ContactForm label{ position:relative;min-height:34px; display: inline-block;}
+#ContactForm .message{ height:97px;}
+#ContactForm  span{ display:block}
+#ContactForm .error, #ContactForm .empty{ font-size:10px; color:#fff; line-height:14px; display:none; width:100%}
+#ContactForm a{ margin-left:20px; float:right;}
+#ContactForm .input { margin:0;width:282px; height:16px; padding:8px;color:#727272; font:13px Arial, Helvetica, sans-serif;}
+#ContactForm textarea { overflow: auto; margin:0;resize:none;width:594px; height:58px; padding:8px;color:#727272; font:13px Arial, Helvetica, sans-serif;}
+
+
+#ContactForm  .bg{ display:inline-block;}
+#ContactForm .pad_left1{ padding-left:12px;}
+#ContactForm .col1{ width:300px;}
+
+#ContactForm {
+    padding:0;
+}
+#ContactForm .bg{
+    padding:0;
+    display: inline-block;
+    float: left;
+    position: relative;
+}
+#ContactForm .wrapper {
+    overflow:inherit;
+    min-height:40px;
+}
+#ContactForm .success {
+    padding-bottom: 0px;
+    text-transform:uppercase;
+    font-size:10px;
+    position:relative;
+    float:left;
+    color: #000;
+    width: 100%;
+    line-height: 11px;
+}
+#ContactForm label {
+    position:relative;
+    display:inline-block;
+    float: left;
+    width: 100%;
+    padding-bottom: 6px;
+}
+#ContactForm span {
+    display:block
+}
+#ContactForm .error,#ContactForm .empty {
+    font-size:9px;
+    color: #796D71;
+    line-height:9px;
+    display:none;
+    width: 100%;
+    top:0px;
+    position:relative;
+    text-transform:uppercase;
+    float: left;
+}
+#ContactForm a {
+    position:relative;
+    z-index:1;
+}
+#ContactForm a:hover {text-decoration:none;}
+#ContactForm .input {
+    width: 235px;
+    padding: 8px 10px;
+    color: #796D71;
+    outline:none;
+    font-size: 12px;
+    font-family: Arial;
+
+}
+#ContactForm textarea {
+    overflow:auto;
+    margin:0;
+    width: 330px;
+    height: 125px;
+    padding: 10px 10px;
+    color: #796d71;
+    resize:none;
+    outline:none;
+    font-size: 12px;
+    font-family: Arial;
+}
+#ContactForm .block {
+    display:inline-block;
+    position:relative;
+    width: 100%;
+    float: left;
+}
+#ContactForm .magRight1{margin-right:16px;}
+.formButtons{position:relative; float: right;  display: inline-block;margin-top: 58px; margin-right:20px; font-weight:bold;}
+.formBtn{display:inline-block;  position:relative;  margin-right: 6px;}
+
+
+.signature{margin-top:10px;font-size:20px;font-style:italic}
+#copyright{text-align:center;width:100%;color:#666}
+
+.fancybox img{width:167px;height:130px}
+/* ============================= end forms ============================= */
