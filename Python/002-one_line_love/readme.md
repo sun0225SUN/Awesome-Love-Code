@@ -6,7 +6,7 @@ python index.py
 
 # 效果
 
-```python
+```txt
                 veLoveLov           veLoveLov
             eLoveLoveLoveLove   eLoveLoveLoveLove
           veLoveLoveLoveLoveLoveLoveLoveLoveLoveLov
