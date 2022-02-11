@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/*电脑版本*/
+@media screen and (min-width:501px){
+.box{
+		width: 600px;
+		background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+		border-radius: 10px;
+		margin: 0 auto;
+		color: aliceblue;
+		 margin: auto;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+   	 	right: 0;
+    	bottom: 0;
+	}
+	.box img{
+		width: 200px;
+		height: 200px;
+		border-radius: 5px;
+	}
+	.box p{
+		padding-top: 30px;
+		font-weight: bold;
+	}
+	.bottom{
+		margin-top:30px;
+		width: 99%;
+		height: 80px;
+	
+	}
+	.left{
+		display: inline-block;
+		width: 150px;
+		height: 40px;
+		background-color: #5cb85c;
+		border-color: #4cae4c;
+		margin-right: 100px;
+		border-radius: 5px;
+		line-height: 40px;
+		font-size: 18px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	.left:hover{
+		background-color:#328732;
+		
+	}
+		.right{
+		cursor: pointer;
+		display: inline-block;
+		width: 150px;
+		height: 40px;
+		background-color: #c9302c;
+		border-color: #ac2925;
+		border-radius: 5px;
+		line-height: 40px;
+		font-size: 16px;
+		
+	}
+	.right:hover{
+		border-color:#B11C18;
+	}
+}
+/*手机端*/
+@media screen and (max-width:500px){
+	.box{
+		width: 100%;
+		background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+	
+		margin: 0 auto;
+		color: aliceblue;
+		 margin: auto;
+    	position: absolute;
+    	top: 0;
+    	left: 0;
+   	 	right: 0;
+    	bottom: 0;
+	}
+		.box img{
+		width:150px;
+		height: 150px;
+		border-radius: 5px;
+	}
+	.box p{
+		padding-top: 30px;
+		font-weight: bold;
+	}
+	.bottom{
+		margin-top:3%;
+		width: 99%;
+		height: 80px;
+	
+	
+	}
+	.left{
+		display: inline-block;
+		width: 40%;
+		height: 40px;
+		background-color: #5cb85c;
+		border-color: #4cae4c;
+		margin-right: 10%;
+		border-radius: 5px;
+		line-height: 40px;
+		font-size: 18px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+	.left:hover{
+		background-color:#328732;
+		
+	}
+		.right{
+		cursor: pointer;
+		display: inline-block;
+		width: 40%;
+		height: 40px;
+		background-color: #c9302c;
+		border-color: #ac2925;
+		border-radius: 5px;
+		line-height: 40px;
+		font-size: 16px;
+		
+	}
+	.right:hover{
+		border-color:#B11C18;
+	}
+
+
+	
+
+}

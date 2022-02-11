@@ -1,0 +1,106 @@
+.msg-time {
+    margin: 10px 5px;
+
+    font-size: $font-size-sm;
+
+    text-align: center;
+    color: $clr-text-unimportant;
+}
+
+.msg-row {
+    @include clearfix;
+    margin-bottom: 10px;
+}
+
+.msg-author {
+    margin-bottom: $distance-lg;
+
+    & + .msg-author {
+        margin-top: -15px;
+    }
+}
+
+.msg-me {
+    margin-bottom: $distance-lg;
+
+    & + .msg-me {
+        margin-top: -15px;
+    }
+}
+
+    .msg {
+        display: inline-block;
+
+        padding: 9px 14px;
+        max-width: 65%;
+        overflow: hidden;
+        word-wrap: break-word;
+
+        font-size: $font-size-basic;
+        line-height: 24px;
+
+        background: white;
+        border-radius: $msg-radius;
+        box-shadow: 5px 5px 15px 0 rgba(102, 102, 102, 0.1);
+
+        transition: width .12s ease-out, height .12s ease-out;
+        transform: translate3d(0, 0, 0);
+
+        .msg-author & {
+            border-radius: 0 $msg-radius $msg-radius $msg-radius;
+        }
+
+        .msg-me & {
+            @extend .primary-bg;
+
+            float: right;
+
+            color: white;
+            border-radius: $msg-radius $msg-radius 0 $msg-radius;
+            box-shadow: 5px 5px 15px 0 rgba(102, 102, 102, 0.15);
+        }
+
+        img {
+            margin: 8px 0;
+        }
+
+        .dot {
+            position: relative;
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #b0e9e0;
+            border-radius: 50%;
+            transform-origin: 50% 50%;
+            animation: dotZoomIn 1.4s infinite;
+
+            &:first-child {
+                animation-delay: -0.32s;
+            }
+
+            &:nth-child(2) {
+                animation-delay: -0.16s;
+            }
+
+            & + .dot {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .msg-bounce-in-left {
+        transform-origin: 0 0;
+        animation: msgBounceIn $msg-animation-duration;
+    }
+
+    .msg-bounce-in-right {
+        transform-origin: 100% 100%;
+        animation: msgBounceIn $msg-animation-duration;
+    }
+
+
+@media (max-width: 480px) {
+    .msg {
+        font-size: $font-size-lg;
+    }
+}

@@ -1,0 +1,67 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+</head>
+
+<body id="bgc">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<title>小孙同学</title>
+	<link rel="icon" type="image/x-icon" href="https://i.loli.net/2021/06/03/lFg2V4WUcmkB98G.png">
+	<meta name="language" content="zh-CN">
+	<meta name="title" content="小孙同学">
+	<meta name="github" content="https://github.com/sun0225SUN/Awesome-Love-Code">
+	<meta name="describe" content="收集不易，您的star是我坚持的动力，同时也欢迎各位PR哦! ">
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/js.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<div class="mb-box">
+		<div class="bb">
+
+			<h2>小情书</h2>
+			<div class="bb_text">
+				<div id="code">
+					宝贝有人说爱情可以让人失去生命，但我不会。我要留着这条命为你擦去嘴角的面渣；我要留着这条命去买你喜欢的玫瑰花；我要留着这条命拂去你眼角的泪水；我要留着这条命去撑起你的快乐天堂；如果有一天你找到了心中的他，我会爬上山崖，为你去摘那朵你心中的花！我想和你一起过平淡的生活......清晨可以看到你的笑脸和餐桌上的牛奶煎蛋，然后一起出门，很努力地工作，下班去超市买菜，一起回家做晚饭，夕阳下牵手散步......一直到老...
+				</div>
+			</div>
+			<p class="bb_myname">
+				小孙同学<br>
+			</p>
+
+		</div>
+	</div>
+
+	<script>
+		Element.prototype.typewriter = function (a) {
+			var d = this,
+				c = d.innerHTML,
+				b = 0;
+			d.innerHTML = "";
+			var e = setInterval(function () {
+				var f = c.substr(b, 1);
+				if (f == "<") {
+					b = c.indexOf(">", b) + 1
+				} else {
+					b++
+				}
+				d.innerHTML = c.substring(0, b) + (b & 1 ? "_" : "");
+				if (b >= c.length) {
+					clearInterval(e)
+				}
+			}, 150)
+			return this
+
+		}
+		document.getElementById("code").typewriter();
+	</script>
+	<audio id="main_audio" autoplay="autoplay" preload="auto" loop="">
+		<source src="http://t.cn/RRxEs1c" type="audio/mpeg">
+	</audio>
+	<script type="text/javascript" src="js/count.js"></script>
+
+
+	<script type="text/javascript" async="" src="js/su.js"></script>
+
+</body>
+
+</html>

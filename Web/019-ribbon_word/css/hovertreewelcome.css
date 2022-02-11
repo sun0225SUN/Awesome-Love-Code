@@ -1,0 +1,217 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font: 16px/1.4 'Lato', sans-serif;
+    color: #fefeff;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+body {
+    background: rgb(8,5,16);
+    overflow: hidden;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+h1 {
+    font: 2.75em 'Cinzel', serif;
+    font-weight: 400;
+    letter-spacing: 0.35em;
+    text-shadow: 0 0 25px rgba(254,254,255,0.85);
+}
+
+h2 {
+    font: 1.45em 'Cinzel', serif;
+    font-weight: 400;
+    letter-spacing: 0.5em;
+    text-shadow: 0 0 25px rgba(254,254,255,0.85);
+    text-transform: lowercase;
+}
+
+[class^="letter"] {
+    -webkit-transition: opacity 3s ease;
+    -moz-transition: opacity 3s ease;
+    transition: opacity 3s ease;
+}
+
+.letter-0 {
+    transition-delay: 0.2s;
+}
+
+.letter-1 {
+    transition-delay: 0.4s;
+}
+
+.letter-2 {
+    transition-delay: 0.6s;
+}
+
+.letter-3 {
+    transition-delay: 0.8s;
+}
+
+.letter-4 {
+    transition-delay: 1.0s;
+}
+
+.letter-5 {
+    transition-delay: 1.2s;
+}
+
+.letter-6 {
+    transition-delay: 1.4s;
+}
+
+.letter-7 {
+    transition-delay: 1.6s;
+}
+
+.letter-8 {
+    transition-delay: 1.8s;
+}
+
+.letter-9 {
+    transition-delay: 2.0s;
+}
+
+.letter-10 {
+    transition-delay: 2.2s;
+}
+
+.letter-11 {
+    transition-delay: 2.4s;
+}
+
+.letter-12 {
+    transition-delay: 2.6s;
+}
+
+.letter-13 {
+    transition-delay: 2.8s;
+}
+
+.letter-14 {
+    transition-delay: 3.0s;
+}
+
+h1, h2 {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+    h1.transition-in,
+    h2.transition-in {
+        visibility: visible;
+    }
+
+    h1 [class^="letter"],
+    h2 [class^="letter"] {
+        opacity: 0;
+    }
+
+    h1.transition-in [class^="letter"],
+    h2.transition-in [class^="letter"] {
+        opacity: 1;
+    }
+
+#hovertreecontainer {
+    display: table;
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    cursor: none;
+    left: 15px;
+}
+
+    #hovertreecontainer > div {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    #hovertreecontainer p {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 25px;
+        font-size: 0.8em;
+        letter-spacing: 0.1em;
+        font-weight: 300;
+        color: #76747a;
+        -webkit-font-smoothing: subpixel-antialiased;
+        font-smoothing: subpixel-antialiased;
+    }
+
+        #hovertreecontainer p strong {
+            color: #b3abc5;
+            font-size: 5em;
+        }
+
+        #hovertreecontainer p span {
+            font-size: 0.75em;
+            padding: 0 2px;
+        }
+
+#canvas {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: none;
+}
+
+#stats {
+    position: absolute;
+    z-index: 10;
+    left: 10px;
+    top: 10px;
+}
+
+.dg.ac {
+    z-index: 100 !important;
+}
+
+#hovertreecontainer div p strong a {
+    color: #999;
+    font-size: 0.5em;
+}
+
+body, td, th {
+    font-family: Lato, sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
