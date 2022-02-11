@@ -205,20 +205,20 @@
     <!-- 第一行 -->
     <tr>
     <td valign="top">
-        <a href="https://sun0225sun.github.io/Awesome-Love-Code/Web/001-sincere_heart">
-            <p align="center">001-sincere_heart</p>
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/Python/001-be_my_girlfriend">
+            <p align="center">001-be_my_girlfriend</p>
             <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/python/001.jpg"/>
         </a>
     </td>
     <td valign="top">
-        <a href="https://sun0225sun.github.io/Awesome-Love-Code/Web/002-love_rose">
-            <p align="center">002-love_rose</p>
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/Python/002-one_line_love">
+            <p align="center">002-one_line_love</p>
             <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/python/002.jpg"/>
         </a>
     </td>
     <td valign="top">
-        <a href="https://sun0225sun.github.io/Awesome-Love-Code/Web/003-love_letter">
-            <p align="center">003-love_letter</p>
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/Python/003-send_love">
+            <p align="center">003-send_love</p>
             <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/python/003.jpg"/>
         </a>
     </td>
@@ -231,8 +231,8 @@
     <!-- 第一行 -->
     <tr>
     <td valign="top">
-        <a href="https://sun0225sun.github.io/Awesome-Love-Code/Web/001-sincere_heart">
-            <p align="center">001-sincere_heart</p>
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/csharp/001-be_my_girlfriend">
+            <p align="center">001-be_my_girlfriend</p>
             <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/csharp/001.gif"/>
         </a>
     </td>
