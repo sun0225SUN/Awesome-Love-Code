@@ -231,7 +231,7 @@
     <!-- 第一行 -->
     <tr>
     <td valign="top">
-        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/csharp/001-be_my_girlfriend">
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/CSharp/001-be_my_girlfriend">
             <p align="center">001-be_my_girlfriend</p>
             <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/csharp/001.gif"/>
         </a>
