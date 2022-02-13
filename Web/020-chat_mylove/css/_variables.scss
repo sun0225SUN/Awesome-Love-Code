@@ -1,0 +1,38 @@
+$clr-primary:          #22c3aa;
+$clr-primary-light:    lighten($clr-primary, 10%);
+$clr-primary-lighter:  lighten($clr-primary, 40%);
+
+$clr-gray:             #666;
+$clr-light:            #bbb;
+$clr-lighter:          #ddd;
+$clr-lightest:         #f3f3f3;
+
+$clr-text:             $clr-gray;
+$clr-text-light:       #888;
+$clr-text-unimportant: $clr-light;
+
+$clr-border:           $clr-lighter;
+$clr-border-light:     $clr-lightest;
+
+$clr-mask:             rgba(0, 0, 0, 0.5);
+
+$mobile-width: 360px;
+$mobile-head-height: 45px;
+$mobile-foot-height: 55px;
+
+$msg-radius: 20px;
+$msg-animation-duration: .4s;
+
+$prompt-animation-duration: 0.3s;
+
+$distance-basic: 15px;
+$distance-lg: 20px;
+$distance-sm: 12px;
+$distance-h: 18px;
+$distance-inline: 5px;
+
+$radius-lg: $distance-lg;
+
+$font-size-basic: 14px;
+$font-size-sm: 13px;
+$font-size-lg: 15px;

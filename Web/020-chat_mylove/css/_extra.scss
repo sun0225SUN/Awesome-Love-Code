@@ -1,0 +1,54 @@
+.extra-link {
+    position: absolute;
+    bottom: $distance-lg;
+
+    max-width: 20%;
+
+    a {
+        display: inline-block;
+        margin: 0 6px;
+
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none;
+            text-shadow: 0 0 5px $clr-primary;
+
+            svg {
+                filter: drop-shadow(0 0 5px $clr-primary);
+            }
+        }
+
+        &.letters {
+            position: relative;
+            top: -4px;
+
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+        }
+
+        &#en-link {
+            font-size: 17px;
+        }
+
+        svg {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+}
+
+#meta-link {
+    left: $distance-lg;
+}
+
+#social-link {
+    right: $distance-lg;
+}
+
+
+@media (max-width: 720px) {
+    .extra-link {
+        display: none;
+    }
+}

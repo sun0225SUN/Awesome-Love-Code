@@ -1,0 +1,166 @@
+#prompt-bg {
+    opacity: 0;
+
+    #mobile.has-prompt & {
+        position: absolute;
+        top: 0;
+        z-index: 50;
+
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        background-color: $clr-mask;
+        border-radius: $radius-lg;
+        
+        opacity: 1;
+        transition: opacity .3s;
+    }
+}
+
+
+#prompt {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    z-index: 100;
+
+    width: 100%;
+
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+    transition-duration: $prompt-animation-duration;
+    transition-property: transform;
+
+    #mobile.has-prompt & {
+        transform: translateY(0);
+    }
+}
+
+    #prompt-head {
+        position: relative;
+
+        border-bottom: 1px solid $clr-border-light;
+        background-color: white;
+
+        .say-something {
+            padding-top: $distance-sm;
+            padding-bottom: $distance-sm;
+        }
+    }
+
+        .close-btn {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            height: 20px;
+            padding: $distance-sm $distance-h;
+
+            &:before, &:after {
+                content: '';
+
+                display: block;
+
+                width: 16px;
+                height: 2px;
+                position: relative;
+                top: 8px;
+
+                background-color: $clr-border;
+            }
+
+            &:before {
+                top: 10px;
+
+                transform: rotateZ(45deg);
+            }
+
+            &:after {
+                transform: rotateZ(-45deg);
+            }
+        }
+
+    #prompt-body {
+        background-color: white;
+        overflow: hidden;
+
+        .responses {
+            li {
+                border-bottom: 1px solid $clr-border-light;
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                a {
+                    display: block;
+
+                    height: 100%;
+                    padding: $distance-sm $distance-h;
+
+                    color: $clr-text;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .next-topic {
+            padding: $distance-sm $distance-h;
+
+            h3 {
+                margin: 0 0 $distance-sm 0;
+
+                font-size: $font-size-basic;
+                font-weight: normal;
+
+                color: $clr-text-unimportant;
+            }
+
+            .topics {
+                text-align: center;
+
+                li {
+                    display: inline-block;
+                    margin: 5px 3px;
+
+                    a {
+                        @extend .primary-bg;
+
+                        display: block;
+
+                        padding: $distance-inline $distance-sm;
+                        margin-right: $distance-inline;
+
+                        border-radius: $radius-lg;
+
+                        text-decoration: none;
+                        color: white;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+@media (max-width: 480px) {
+    #prompt-bg {
+        border-radius: 0 !important;
+    }
+
+    #prompt-head .say-something {
+        padding-top: $distance-sm + 3px;
+        padding-bottom: $distance-sm + 3px;
+    }
+
+    #prompt-body .responses li a {
+        padding: $distance-sm + 3px $distance-h + 3px;
+    }
+}

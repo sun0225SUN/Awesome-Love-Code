@@ -1,0 +1,85 @@
+$scroll-bar-width: 8px;
+
+
+#mobile-body {
+    position: absolute;
+    top: $mobile-head-height;
+    bottom: $mobile-foot-height;
+
+    width: 100%;
+
+    background: #E8F9F6;
+
+    a {
+        color: $clr-primary;
+        text-decoration: none;
+    }
+}
+
+    #mobile-body-bg {
+        width: 100%;
+        height: 100%;
+
+        &:before, &:after {
+            content: '';
+
+            display: block;
+            z-index: 10;
+        }
+
+        &:before {
+            position: relative;
+
+            width: 100%;
+            height: 25px;
+
+            background: linear-gradient(rgba(34, 195, 170, 0.1) 0,
+                transparent);
+        }
+
+        &:after {
+            position: absolute;
+            bottom: 0;
+
+            width: 100%;
+            height: 15px;
+
+            background: linear-gradient(transparent 0,
+                rgba(34, 195, 170, 0.05) 100%);
+        }
+    }
+
+    #mobile-body-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        padding: 16px $distance-h - $scroll-bar-width 16px $distance-h;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+
+        color: $clr-text;
+
+        // fix touch bug
+        z-index: 1;
+
+        &::-webkit-scrollbar {
+            width: $scroll-bar-width;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: $clr-primary-lighter;
+            border-radius: $scroll-bar-width / 2;
+        }
+    }
+
+    #mock-msg-row {
+        position: absolute;
+        top: -1000px;
+        left: 18px;
+        right: 10px;
+        visibility: hidden;
+    }

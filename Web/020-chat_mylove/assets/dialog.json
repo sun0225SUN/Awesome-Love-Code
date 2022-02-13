@@ -1,0 +1,56 @@
+{
+    "fromMe": [{
+        "id": "0000",
+        "details": [
+            [
+                "💐💐💐情人节快乐💐💐💐",
+                "我的宝贝😘",
+                "🌹🌹🌹送你花花🌹🌹🌹",
+                "<pre>🍀🍀🍀🌹🍀🍀🍀🌹🍀🍀🍀 \n🍀🍀🌹🌹🌹🍀🌹🌹🌹🍀🍀 \n🍀🌹🌹🌹🌹🌹🌹🌹🌹🌹🍀 \n🍀🌹🌹🌹🌹🌹🌹🌹🌹🌹🍀 \n🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹 \n🍀🌹🌹🌹🌹🌹🌹🌹🌹🌹🍀 \n🍀🍀🌹🌹🌹🌹🌹🌹🌹🍀🍀 \n🍀🍀🍀🌹🌹🌹🌹🌹🍀🍀🍀 \n🍀🍀🍀🍀🍀🌹🍀🍀🍀🍀🍀</pre>",
+                "几日不见📅",
+                "十分想念😘",
+                "<img src='img/love-the-girl.jpg'>",
+                "你说你讨厌异地恋🤔",
+                "一场全国性的新肺炎😷",
+                "<img src='img/news-wuhanfeiyan.jpg'>",
+                "让咱们不得不来一场异地恋😂",
+                "稍等一下🙂",
+                "让我再看一眼你的照片😘",
+                "<img src='img/in-sichuan.jpeg'>",
+                "跟你在一起的每一天📅",
+                "都让我感到十分想念📬",
+                "<img src='img/lucky-me.jpg'>",
+                "想念你做的早餐🍲",
+                "<img src='img/breakfast.jpg'>",
+                "想念跟你一起锻炼🛹",
+                "<img src='img/exercise-together.jpg'>",
+                "想念跟你一起旅游的时候🚂",
+                "<img src='img/travel.jpg'>",
+                "我们的脚印能一起出现🎠",
+                "<img src='img/foot.jpg'>",
+                "永远在一起的誓言💑",
+                "我想再重复一遍😍",
+                "<img src='img/marry-me.png'>",
+                "嫁给我吧💍"
+            ]
+        ],
+        "responses": [{
+            "content": "我愿意",
+            "nextAuthor": ["0001"]
+        }]
+    }, {
+        "id": "0001",
+        "details": [
+            [
+                "<img src='img/kiss-my-princess.png'>",
+                "宝贝我好开心呀😁",
+                "今后每一天的相见😍",
+                "你都是我的初恋😘",
+                "给你的那些承诺😙",
+                "我都会一一兑现😉",
+                "宝，我爱你😘"
+            ]
+        ]
+    }],
+    "fromUser": []
+}

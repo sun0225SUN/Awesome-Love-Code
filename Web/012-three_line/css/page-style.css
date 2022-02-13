@@ -1,0 +1,361 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #e9a0a0;
+	font-family: '微软雅黑';
+}
+.book{
+	height: 300px;
+	width: 300px;
+	background: #FFF;
+	position: absolute;
+	top: 20%;
+	left: 40%;
+	transform: rotateX(30deg);
+	-webkit-transform: rotateX(30deg);
+	-ms-transform: rotateX(30deg);
+	-o-transform: rotateX(30deg);
+}
+.link{
+	position: absolute;
+	left: 45%;
+	top:80%;
+	color: #fff;
+	font-size: 30px;
+	text-decoration: none;
+	margin: 0 0 0 30px;
+}
+.link:hover{
+  color: orange;
+}
+/*每页的公共样式*/
+.book-page {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 300px;
+	border: 1px solid #1976D2;
+	text-align: center;
+	background:#fff url(../img/4.jpg) no-repeat center;
+	background-size: 100% 270px;
+}
+.book-page p{
+	font-size: 38px;
+	color:  #fff;
+	margin-top: 100px;
+	background: red;
+	background-color: rgba(0,0,0,0.7)!important;
+    filter:Alpha(opacity=70);
+}
+/*首页样式*/
+.first-page{
+	background-color: #1976D2;
+	background: #1976D2 url() ;
+}
+.first-page p{
+	font-size: 30px;
+	color: #fff;
+	margin-top: 100px;
+}
+
+/*动画部分*/
+/*I'm the home page动画*/
+.flip-animation-1 {
+	animation: flipBook1 17s;
+	-moz-animation: flipBook1 17s; /* Firefox */
+	-webkit-animation: flipBook1 17s; /* Safari and Chrome */
+	-o-animation: flipBook1 17s; /* Opera */
+}
+@keyframes flipBook1 {
+	0% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+	50% {
+		-webkit-transform: rotateY(-160deg);
+		-ms-transform: rotateY(-160deg);
+		-o-transform: rotateY(-160deg);
+		transform: rotateY(-160deg);
+	}
+	100% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+}
+
+/* Firefox */
+@-moz-keyframes flipBook1 {
+	0% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+	50% {
+		-webkit-transform: rotateY(-160deg);
+		-ms-transform: rotateY(-160deg);
+		-o-transform: rotateY(-160deg);
+		transform: rotateY(-160deg);
+	}
+	100% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes flipBook1 {
+	0% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+	50% {
+		-webkit-transform: rotateY(-160deg);
+		-ms-transform: rotateY(-160deg);
+		-o-transform: rotateY(-160deg);
+		transform: rotateY(-160deg);
+	}
+	100% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+}
+
+/* Opera */
+@-o-keyframes flipBook1 {
+	0% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+	50% {
+		-webkit-transform: rotateY(-160deg);
+		-ms-transform: rotateY(-160deg);
+		-o-transform: rotateY(-160deg);
+		transform: rotateY(-160deg);
+	}
+	100% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+}
+/*第一页动画*/
+.flip-animation-2 {
+	animation: flipBook2 13s 2s;
+	-moz-animation: flipBook2 13s 2s; /* Firefox */
+	-webkit-animation: flipBook2 13s 2s; /* Safari and Chrome */
+	-o-animation: flipBook2 13s 2s; /* Opera */
+}
+@keyframes flipBook2 {
+	0% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+	50% {
+		-webkit-transform: rotateY(-150deg);
+		-ms-transform: rotateY(-150deg);
+		-o-transform: rotateY(-150deg);
+		transform: rotateY(-150deg);
+	}
+	100% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+}
+
+/* Firefox */
+@-moz-keyframes flipBook2 {
+	0% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+	50% {
+		-webkit-transform: rotateY(-150deg);
+		-ms-transform: rotateY(-150deg);
+		-o-transform: rotateY(-150deg);
+		transform: rotateY(-150deg);
+	}
+	100% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes flipBook2 {
+	0% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+	50% {
+		-webkit-transform: rotateY(-150deg);
+		-ms-transform: rotateY(-150deg);
+		-o-transform: rotateY(-150deg);
+		transform: rotateY(-150deg);
+	}
+	100% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+}
+
+/* Opera */
+@-o-keyframes flipBook2 {
+	0% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+	50% {
+		-webkit-transform: rotateY(-150deg);
+		-ms-transform: rotateY(-150deg);
+		-o-transform: rotateY(-150deg);
+		transform: rotateY(-150deg);
+	}
+	100% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+}
+
+/*第二页动画*/
+.flip-animation-3 {
+	animation: flipBook3 10s 3s;
+	-moz-animation: flipBook3 10s 3s; /* Firefox */
+	-webkit-animation: flipBook3 10s 3s; /* Safari and Chrome */
+	-o-animation: flipBook3 10s 3s; /* Opera */
+}
+@keyframes flipBook3 {
+	0% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+	50% {
+		-webkit-transform: rotateY(-140deg);
+		-ms-transform: rotateY(-140deg);
+		-o-transform: rotateY(-140deg);
+		transform: rotateY(-140deg);
+	}
+	100% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+}
+
+/* Firefox */
+@-moz-keyframes flipBook3 {
+	0% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+	50% {
+		-webkit-transform: rotateY(-140deg);
+		-ms-transform: rotateY(-140deg);
+		-o-transform: rotateY(-140deg);
+		transform: rotateY(-140deg);
+	}
+	100% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes flipBook3 {
+	0% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+	50% {
+		-webkit-transform: rotateY(-140deg);
+		-ms-transform: rotateY(-140deg);
+		-o-transform: rotateY(-140deg);
+		transform: rotateY(-140deg);
+	}
+	100% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+}
+
+/* Opera */
+@-o-keyframes flipBook3 {
+	0% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+	50% {
+		-webkit-transform: rotateY(-140deg);
+		-ms-transform: rotateY(-140deg);
+		-o-transform: rotateY(-140deg);
+		transform: rotateY(-140deg);
+	}
+	100% {
+		-webkit-transform: rotateY(0deg);
+		-ms-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+}
+
+/*维持3D效果：即显示出rotateZ轴的效果*/
+.preserve-3d{
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+/*绕某点转动：即 “绕某点转动” + “绕Y轴转动” 两个效果叠加后 实现了每页绕书的左边缘转动*/
+.point{
+	transform-origin: 0% 50%;
+	-webkit-transform-origin: 0% 50%;
+	-moz-transform-origin: 0% 50%;
+	-ms-transform-origin: 0% 50%;
+	-o-transform-origin: 0% 50%;
+}
