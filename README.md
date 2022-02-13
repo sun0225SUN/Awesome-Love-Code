@@ -244,6 +244,27 @@
         </a>
     </td>
     </tr>
+    <!-- 第二行 -->
+    <tr>
+    <td valign="top">
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/Python/004-flowers">
+            <p align="center">004-flowers</p>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/python/004.jpg"/>
+        </a>
+    </td>
+    <td valign="top">
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/Python/005-3D_love">
+            <p align="center">005-3D_love</p>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/python/005.jpg"/>
+        </a>
+    </td>
+    <td valign="top">
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/Python/006-love_you">
+            <p align="center">006-love_you</p>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/python/006.jpg"/>
+        </a>
+    </td>
+    </tr>
 </table>
 
 # C#
