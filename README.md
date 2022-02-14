@@ -281,7 +281,7 @@
     <td valign="top">
         <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/MatLab/002-heart">
             <p align="center">002-heart</p>
-            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/matlab/002.jpg"/>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/matlab/002.gif"/>
         </a>
     </td>
     <td valign="top">
