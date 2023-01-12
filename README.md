@@ -223,19 +223,19 @@
     <td valign="top">
         <a href="https://sun0225sun.github.io/Awesome-Love-Code/Web/031">
             <p align="center">031</p>
-            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/web/031.jpg"/>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/web/031.png"/>
         </a>
     </td>
     <td valign="top">
         <a href="https://sun0225sun.github.io/Awesome-Love-Code/Web/032">
             <p align="center">032</p>
-            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/web/032.jpg"/>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/web/032.png"/>
         </a>
     </td>
     <td valign="top">
         <a href="https://sun0225sun.github.io/Awesome-Love-Code/Web/033">
             <p align="center">033</p>
-            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/web/033.jpg"/>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/web/033.png"/>
         </a>
     </td>
     </tr>
@@ -244,19 +244,7 @@
     <td valign="top">
         <a href="https://sun0225sun.github.io/Awesome-Love-Code/Web/034">
             <p align="center">034</p>
-            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/web/034.jpg"/>
-        </a>
-    </td>
-    <td valign="top">
-        <a href="https://sun0225sun.github.io/Awesome-Love-Code/Web/035">
-            <p align="center">035</p>
-            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/web/035.jpg"/>
-        </a>
-    </td>
-    <td valign="top">
-        <a href="https://sun0225sun.github.io/Awesome-Love-Code/Web/036">
-            <p align="center">036</p>
-            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/web/036.jpg"/>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/web/034.png"/>
         </a>
     </td>
     </tr>
@@ -265,9 +253,6 @@
 >  注:
 >  ` 031` 源自此仓库：https://github.com/Kaiser-DMr/-3D  作者：Kaiser-DMr
 >  ` 032` 源自此仓库：https://github.com/fromann/heart  作者：fromann
-
-
-
 
 
 
