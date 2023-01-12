@@ -395,6 +395,55 @@
 
 >  注: 007--009  原文链接：https://zhuanlan.zhihu.com/p/411819722  作者：slandarer
 
+# C
+
+<table >
+    <!-- 第一行 -->
+    <tr>
+    <td valign="top">
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/C/001">
+            <p align="center">001</p>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/c/001.png"/>
+        </a>
+    </td>
+    <td valign="top">
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/C/002">
+            <p align="center">002</p>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/c/002.png"/>
+        </a>
+    </td>
+    <td valign="top">
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/C/003">
+            <p align="center">003</p>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/imgc/003.png"/>
+        </a>
+    </td>
+    </tr>
+    <!-- 第二行 -->
+    <tr>
+    <td valign="top">
+        <a href="https://github.com/sun0225SUN/C-Love-Code">
+            <p align="center">004</p>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/c/004.png"/>
+        </a>
+    </td>
+    <td valign="top">
+        <a href="https://github.com/sun0225SUN/C-Meteor-Shower">
+            <p align="center">005</p>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/c/005.png"/>
+        </a>
+    </td>
+    <td valign="top">
+        <a href="https://github.com/sun0225SUN/C-Fireworks-Code">
+            <p align="center">006</p>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/c/006.png"/>
+        </a>
+    </td>
+    </tr>
+</table>
+
+> 004 原作者 https://www.bilibili.com/video/BV13P4y1R7DP/?
+
 # C#
 
 <table align="center">
@@ -404,6 +453,53 @@
         <a href="https://github.com/sun0225SUN/Be-My-Girlfriend">
             <p align="center">001</p>
             <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/csharp/001.gif"/>
+        </a>
+    </td>
+    </tr>
+</table>
+
+# Vbs
+
+<table >
+    <!-- 第一行 -->
+    <tr>
+    <td valign="top">
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/Vbs/001">
+            <p align="center">001</p>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/matlab/001.gif"/>
+        </a>
+    </td>
+    <td valign="top">
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/Vbs/002">
+            <p align="center">002</p>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/matlab/002.gif"/>
+        </a>
+    </td>
+    <td valign="top">
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/Vbs/003">
+            <p align="center">003</p>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/matlab/003.gif"/>
+        </a>
+    </td>
+    </tr>
+    <!-- 第二行 -->
+    <tr>
+    <td valign="top">
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/MatLab/Vbs/004">
+            <p align="center">004</p>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/matlab/004.gif"/>
+        </a>
+    </td>
+    <td valign="top">
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/Vbs/005">
+            <p align="center">005</p>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/vbs/005.gif"/>
+        </a>
+    </td>
+    <td valign="top">
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/Vbs/006">
+            <p align="center">006</p>
+            <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/vbs/006.png"/>
         </a>
     </td>
     </tr>
