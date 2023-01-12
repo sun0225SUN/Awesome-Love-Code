@@ -1,0 +1,42 @@
+
+/*通用初始化样式*/
+* { margin: 0; padding: 0; }
+body, div, p, h1, h2, h3, h4, h5, h6, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, table,th,td { margin:0; padding:0; }
+body, button, input, select, textarea  { font: 12px/24px Arial, 'Microsoft Yahei',"宋体", sans-serif; }
+address, cite, em, i { font-style: normal; }
+small { font-size: 12px; } li { list-style: none; } a { text-decoration: none; } a:hover { text-decoration: none; }
+legend { color: #000; } fieldset, img { border: 0; } button, input, select, textarea { font-size: 100%; line-height:normal; }
+table{ border-collapse: collapse; border-spacing: 0; }
+input[type="button"],input[type="submit"],input[type="reset"]{cursor:pointer;}
+iframe{ display:block; } .clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; } .clearfix { zoom:1; }
+/*正文样式*/
+* { margin: 0px; padding: 0px; }
+body { background: url("../images/bg.jpg") top/100%; position: fixed }
+img.gb { position: fixed; /*固定*/ left: 45%; top: 0px;
+    -webkit-animation: bd 5s ease-in-out infinite; /*动画名称 时间 运动速度 永远无限*/ }
+
+@-webkit-keyframes bd {
+    0% { -webkit-transform: rotate(30deg); -webkit-transform-origin: center top; }
+    50% { -webkit-transform: rotate(-30deg); -webkit-transform-origin: center top; }
+    100% { -webkit-transform: rotate(30deg); -webkit-transform-origin: center top; }
+}
+#Tz_gray { width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); position: fixed; /*固定*/ left: 0px; top: 0px;
+    display: none; }
+.Con { width: 560px; height: 30px; position: fixed; left: 50%; margin-left: -280px; bottom: 130px; }
+.Con span.col { width: 80px; height: 30px; background: #f3f3f3; display: block; /*块级元素*/ float: left;
+    border-radius: 4px 0px 0px 4px; font-size: 12px; line-height: 30px; text-indent: 10px; /*首行缩进*/ }
+.Con p.txt { width: 400px; overflow: hidden; height: 30px; background: #ffffff; float: left; line-height: 28px; }
+.Con span.but { width: 80px; height: 30px; background: #f4354b; display: block; float: left;
+    font-size: 12px; color: #ffffff; text-align: center; /*水平居中*/ line-height: 30px;
+    border-radius: 0px 4px 4px 0px;cursor: pointer; }
+.Con span.col font { width: 10px; height: 10px; display: block; background: #ff7182; position: absolute; /*绝对定位*/
+    top: 9px; left: 40px; border: 1px solid #000000 /*粗细 风格 颜色*/; }
+.Con ul { width: 80px; position: absolute; bottom: 28px; left: 0px; display: none; }
+.Con ul li { list-style-type: none; /*去掉圆点*/ width: 80px; height: 30px;
+    font-size: 12px; line-height: 30px; text-indent: 10px; background: #f3f3f3; position: relative; }
+.Con ul li font { width: 10px; height: 10px; border: 1px solid #000000; display: block; position: absolute;
+    top: 10px; left: 40px; }
+#Tz_gray .Text { width: 600px; height: 500px; margin: 100px auto; /*水平居中*/ color: #ffa9b7; font-size: 20px; line-height: 40px; text-align: center; }
+.snowfall-flakes { /*.class类选择器*/ position: relative; width: 20px !important; height: 18px !important; }
+.snowfall-flakes:before, .snowfall-flakes:after { content: ""; /*不管有没有内容都必须写这句*/ width: 10px; height: 16px; position: absolute; background: #ff615f; display: block; /*块级元素*/ border-radius: 10px 10px 0 0; /*圆角:左上 右上 右下 左下*/ transform: rotate(-45deg); /*css3变换:旋转*/ left: 10px; /*方位值:距离参考物左端的距离*/ top: 0px; /*距离参考物上端的距离*/ }
+.snowfall-flakes:before { transform: rotate(45deg); left: 14px; }
