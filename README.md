@@ -469,7 +469,7 @@
     <!-- 第二行 -->
     <tr>
     <td valign="top">
-        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/MatLab/Vbs/004">
+        <a href="https://github.com/sun0225SUN/Awesome-Love-Code/tree/main/Vbs/004">
             <p align="center">004</p>
             <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/vbs/004.gif"/>
         </a>
