@@ -251,9 +251,10 @@
 </table>
 
 >  注:
->  ` 031` 源自此仓库：https://github.com/Kaiser-DMr/-3D  作者：Kaiser-DMr
 > 
->  ` 032` 源自此仓库：https://github.com/fromann/heart  作者：fromann
+>  031 源自此仓库：https://github.com/Kaiser-DMr/-3D  作者：Kaiser-DMr
+> 
+>  032 源自此仓库：https://github.com/fromann/heart  作者：fromann
 
 
 
@@ -394,7 +395,7 @@
     </tr>
 </table>
 
->  注: ` 007--009`  原文链接：https://zhuanlan.zhihu.com/p/411819722  作者：slandarer
+>  注: 007--009  原文链接：https://zhuanlan.zhihu.com/p/411819722  作者：slandarer
 
 # C#
 
