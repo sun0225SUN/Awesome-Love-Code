@@ -1,4 +1,32 @@
-(function () {
+/*
+ * A fast javascript implementation of simplex noise by Jonas Wagner
+
+Based on a speed-improved simplex noise algorithm for 2D, 3D and 4D in Java.
+Which is based on example code by Stefan Gustavson (stegu@itn.liu.se).
+With Optimisations by Peter Eastman (peastman@drizzle.stanford.edu).
+Better rank ordering method by Stefan Gustavson in 2012.
+
+ Copyright (c) 2018 Jonas Wagner
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+ */
+(function() {
   'use strict';
 
   var F2 = 0.5 * (Math.sqrt(3.0) - 1.0);
@@ -12,7 +40,8 @@
     var random;
     if (typeof randomOrSeed == 'function') {
       random = randomOrSeed;
-    } else if (randomOrSeed) {
+    }
+    else if (randomOrSeed) {
       random = alea(randomOrSeed);
     } else {
       random = Math.random;
@@ -41,8 +70,7 @@
 
       0, -1, 1,
       0, 1, -1,
-      0, -1, -1
-    ]),
+      0, -1, -1]),
     grad4: new Float32Array([0, 1, 1, 1, 0, 1, 1, -1, 0, 1, -1, 1, 0, 1, -1, -1,
       0, -1, 1, 1, 0, -1, 1, -1, 0, -1, -1, 1, 0, -1, -1, -1,
       1, 0, 1, 1, 1, 0, 1, -1, 1, 0, -1, 1, 1, 0, -1, -1,
@@ -50,9 +78,8 @@
       1, 1, 0, 1, 1, 1, 0, -1, 1, -1, 0, 1, 1, -1, 0, -1,
       -1, 1, 0, 1, -1, 1, 0, -1, -1, -1, 0, 1, -1, -1, 0, -1,
       1, 1, 1, 0, 1, 1, -1, 0, 1, -1, 1, 0, 1, -1, -1, 0,
-      -1, 1, 1, 0, -1, 1, -1, 0, -1, -1, 1, 0, -1, -1, -1, 0
-    ]),
-    noise2D: function (xin, yin) {
+      -1, 1, 1, 0, -1, 1, -1, 0, -1, -1, 1, 0, -1, -1, -1, 0]),
+    noise2D: function(xin, yin) {
       var permMod12 = this.permMod12;
       var perm = this.perm;
       var grad3 = this.grad3;
@@ -113,7 +140,7 @@
       return 70.0 * (n0 + n1 + n2);
     },
     // 3D simplex noise
-    noise3D: function (xin, yin, zin) {
+    noise3D: function(xin, yin, zin) {
       var permMod12 = this.permMod12;
       var perm = this.perm;
       var grad3 = this.grad3;
@@ -159,7 +186,8 @@
           j2 = 0;
           k2 = 1;
         } // Z X Y order
-      } else { // x0<y0
+      }
+      else { // x0<y0
         if (y0 < z0) {
           i1 = 0;
           j1 = 0;
@@ -236,7 +264,7 @@
       return 32.0 * (n0 + n1 + n2 + n3);
     },
     // 4D simplex noise, better simplex rank ordering method 2012-03-09
-    noise4D: function (x, y, z, w) {
+    noise4D: function(x, y, z, w) {
       var perm = this.perm;
       var grad4 = this.grad4;
 
@@ -409,17 +437,16 @@
       }
     }
     mash = null;
-    return function () {
+    return function() {
       var t = 2091639 * s0 + c * 2.3283064365386963e-10; // 2^-32
       s0 = s1;
       s1 = s2;
       return s2 = t - (c = t | 0);
     };
   }
-
   function masher() {
     var n = 0xefc8249d;
-    return function (data) {
+    return function(data) {
       data = data.toString();
       for (var i = 0; i < data.length; i++) {
         n += data.charCodeAt(i);
@@ -436,9 +463,7 @@
   }
 
   // amd
-  if (typeof define !== 'undefined' && define.amd) define(function () {
-    return SimplexNoise;
-  });
+  if (typeof define !== 'undefined' && define.amd) define(function() {return SimplexNoise;});
   // common js
   if (typeof exports !== 'undefined') exports.SimplexNoise = SimplexNoise;
   // browser

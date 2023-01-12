@@ -1,16 +1,4 @@
 ( function () {
-
-	/**
- * Utility class for sampling weighted random points on the surface of a mesh.
- *
- * Building the sampler is a one-time O(n) operation. Once built, any number of
- * random samples may be selected in O(logn) time. Memory usage is O(n).
- *
- * References:
- * - http://www.joesfer.com/?p=84
- * - https://stackoverflow.com/a/4322940/1314762
- */
-
 	const _face = new THREE.Triangle();
 
 	const _color = new THREE.Vector3();
@@ -179,9 +167,7 @@
 				targetColor.r = _color.x;
 				targetColor.g = _color.y;
 				targetColor.b = _color.z;
-
 			}
-
 			return this;
 
 		}

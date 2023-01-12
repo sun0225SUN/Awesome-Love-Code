@@ -1,5 +1,5 @@
 ( function () {
-	// 爱心跳动,抖音ID:不吃蟹黄 作品参考bootstrapmb,引入three基于canvas制作
+
 	const _object_pattern = /^[og]\s*(.+)?/; // mtllib file_reference
 
 	const _material_library_pattern = /^mtllib /; // usemtl material_name
