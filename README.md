@@ -420,19 +420,19 @@
     <!-- 第二行 -->
     <tr>
     <td valign="top">
-        <a target="_blank" href="https://github.com/sun0225SUN/C-Love-Code">
+        <a target="_blank" href="https://github.com/sun0225SUN/love">
             <p align="center">004</p>
             <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/c/004.png"/>
         </a>
     </td>
     <td valign="top">
-        <a target="_blank" href="https://github.com/sun0225SUN/C-Meteor-Shower">
+        <a target="_blank" href="https://github.com/sun0225SUN/meteor">
             <p align="center">005</p>
             <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/c/005.png"/>
         </a>
     </td>
     <td valign="top">
-        <a target="_blank" href="https://github.com/sun0225SUN/C-Fireworks-Code">
+        <a target="_blank" href="https://github.com/sun0225SUN/fireworks">
             <p align="center">006</p>
             <img src="https://cdn.jsdelivr.net/gh/sun0225SUN/Awesome-Love-Code/assets/img/c/006.png"/>
         </a>
