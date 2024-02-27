@@ -1,6 +1,6 @@
 $(function() {
     $('#yes').click(function(event) {
-        modal('我就知道小姐姐您一定会愿意的。(^_^)', function() {
+        modal('我就知道小宝宝一定会愿意~(^_^)', function() {
             $('.page_one').addClass('hide');
             $('.page_two').removeClass('hide');
             // typeWrite();
@@ -14,7 +14,7 @@ $(function() {
 });
 
 function A() {
-    modal('我喜欢你！', B);
+    modal('我爱你！', B);
 }
 
 function B() {
@@ -22,7 +22,7 @@ function B() {
 }
 
 function C() {
-    modal('请您不要拒绝我', D);
+    modal('请宝宝不要拒绝我嘛~', D);
 }
 
 function D() {
@@ -30,21 +30,32 @@ function D() {
 }
 
 function E() {
-    modal('这辈子都不可能让你离开我', F);
+    modal('这辈子都不可能让你离开我的!!!', F);
 }
 
 function F() {
-    modal('跟我走吧', G);
+    modal('跟我走吧宝宝~', G);
 }
 
 function G() {
-    modal('房产证上写你名', H);
+    modal('房产证上写你的名字', H);
 }
 
 function H() {
     modal('我会做饭', I);
 }
-
+ function I() {
+    modal('我会买很多东西给你', J)
+}
+function I() {
+    modal('会好好疼你', J)
+}
+function I() {
+    modal('会哄你睡觉', J)
+}
+function I() {
+    modal('会唱歌给你听', J)
+}
 function I() {
     modal('爱你。么么哒！', J)
 }
