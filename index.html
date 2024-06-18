@@ -1,273 +1,414 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-  <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>小孙同学&#10084;&#65039;</title>
-    <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/mouse_slide.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/clicklove.js"></script>
-  <style type="text/css">
-    html, body {
-      height: 100%;
-      padding: 0;
-      margin: 0;
-      background: #000;
-    }
-    canvas {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
-    .namebox{
-      color: #fff;
-      position: absolute;   
-            top: 50%;   
-            left: 50%;   
-            -webkit-transform: translate(-50%, -50%);   
-            -moz-transform: translate(-50%, -50%);   
-            -ms-transform: translate(-50%, -50%);   
-            -o-transform: translate(-50%, -50%);   
-            transform: translate(-50%, -50%);   
-    }
-    .namebox h1{
-      margin: 0 auto;
-    }
-  </style>
-
+    <meta charset="utf-8">
+    <title>子菁同学</title>
+    <meta name="language" content="zh-CN">
+    <meta name="title" content="子菁同学">
+    <meta name="github" content="https://github.com/sun0225SUN/Awesome-Love-Code">
+    <meta name="describe" content="收集不易，您的star是我坚持的动力，同时也欢迎各位PR哦! ">
+    <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/sun0225SUN/photos/img/20210715233345.png">
+    <link href="css/hovertreewelcome.css" type="text/css" rel="stylesheet">
 </head>
+
 <body>
-<canvas id="pinkboard"></canvas>
-<script>
-  var settings = {
-    particles: {
-      length: 500, // maximum amount of particles
-      duration: 2, // particle duration in sec
-      velocity: 100, // particle velocity in pixels/sec
-      effect: -0.75, // play with this for a nice effect
-      size: 30, // particle size in pixels
-    },
-  };
-  (
-          function(){
-            var b=0;
-            var c=["ms","moz","webkit","o"];
-            for(var a=0;a<c.length&&!window.requestAnimationFrame;++a){
-              window.requestAnimationFrame=window[c[a]+"RequestAnimationFrame"];
-              window.cancelAnimationFrame=window[c[a]+"CancelAnimationFrame"]||window[c[a]+"CancelRequestAnimationFrame"]
+    <div id="hovertreecontainer">
+
+        <div>
+            <h1 id="h1">子菁同学</h1>
+            <br>
+            <h2 id="h2">抱歉呀</h2>
+            <br>
+            <h3 id="h2">周五那天  我做的有点问题  之后也有好好反思过自己  确实没有充分尊重你和考虑你的感受  这是很重要的一点  有时候突然就脑子和浆糊一样容易上头。</h3>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </div>
+
+    </div>
+
+    <canvas id="canvas"></canvas>
+    <audio autoplay="autoplay">
+        <source src="index_1.html" type="audio/mpeg">
+        您的浏览器不支持播放音乐。请用支持html5的浏览器打开,例如chrome或火狐或者新版IE等。
+
+    </audio>
+    <script type="text/javascript" src="js/hovertreewelcome.js">
+    </script>
+    <script type="text/javascript">
+
+        ; (function (window) {
+
+            var ctx,
+                hue,
+                logo,
+                form,
+                buffer,
+                target = {},
+                tendrils = [],
+                settings = {};
+
+            settings.debug = true;
+            settings.friction = 0.5;
+            settings.trails = 20;
+            settings.size = 50;
+            settings.dampening = 0.25;
+            settings.tension = 0.98;
+
+            Math.TWO_PI = Math.PI * 2;
+
+            // ========================================================================================
+            // Oscillator 何问起
+            // ----------------------------------------------------------------------------------------
+
+            function Oscillator(options) {
+                this.init(options || {});
             }
-            if(!window.requestAnimationFrame){
-              window.requestAnimationFrame=function(h,e){
-                var d=new Date().getTime();
-                var f=Math.max(0,16-(d-b));
-                var g=window.setTimeout(function(){h(d+f)},f);b=d+f;return g}}if(!window.cancelAnimationFrame){window.cancelAnimationFrame=function(d){clearTimeout(d)}}}());
-  var Point = (function() {
-    function Point(x, y) {
-      this.x = (typeof x !== 'undefined') ? x : 0;
-      this.y = (typeof y !== 'undefined') ? y : 0;
-    }
-    Point.prototype.clone = function() {
-      return new Point(this.x, this.y);
-    };
-    Point.prototype.length = function(length) {
-      if (typeof length == 'undefined')
-        return Math.sqrt(this.x * this.x + this.y * this.y);
-      this.normalize();
-      this.x *= length;
-      this.y *= length;
-      return this;
-    };
 
-    Point.prototype.normalize = function() {
-      var length = this.length();
-      this.x /= length;
-      this.y /= length;
-      return this;
-    };
-    return Point;
-  })();
+            Oscillator.prototype = (function () {
 
-  var Particle = (function() {
-    function Particle() {
-      this.position = new Point();
-      this.velocity = new Point();
-      this.acceleration = new Point();
-      this.age = 0;
-    }
-    Particle.prototype.initialize = function(x, y, dx, dy) {
-      this.position.x = x;
-      this.position.y = y;
-      this.velocity.x = dx;
-      this.velocity.y = dy;
-      this.acceleration.x = dx * settings.particles.effect;
-      this.acceleration.y = dy * settings.particles.effect;
-      this.age = 0;
-    };
-    Particle.prototype.update = function(deltaTime) {
-      this.position.x += this.velocity.x * deltaTime;
-      this.position.y += this.velocity.y * deltaTime;
-      this.velocity.x += this.acceleration.x * deltaTime;
-      this.velocity.y += this.acceleration.y * deltaTime;
-      this.age += deltaTime;
-    };
+                var value = 0;
 
-    Particle.prototype.draw = function(context, image) {
-      function ease(t) {
-        return (--t) * t * t + 1;
-      }
-      var size = image.width * ease(this.age / settings.particles.duration);
-      context.globalAlpha = 1 - this.age / settings.particles.duration;
-      context.drawImage(image, this.position.x - size / 2, this.position.y - size / 2, size, size);
-    };
-    return Particle;
-  })();
-  /*
+                return {
 
-  * ParticlePool class
+                    init: function (options) {
+                        this.phase = options.phase || 0;
+                        this.offset = options.offset || 0;
+                        this.frequency = options.frequency || 0.001;
+                        this.amplitude = options.amplitude || 1;
+                    },
 
-  */
-  var ParticlePool = (function() {
-    var particles,
-            firstActive = 0,
-            firstFree = 0,
-            duration = settings.particles.duration;
-    function ParticlePool(length) {
-// create and populate particle pool
-      particles = new Array(length);
-      for (var i = 0; i < particles.length; i++)
-        particles[i] = new Particle();
-    }
-    ParticlePool.prototype.add = function(x, y, dx, dy) {
-      particles[firstFree].initialize(x, y, dx, dy);
-// handle circular queue
-      firstFree++;
-      if (firstFree == particles.length) firstFree = 0;
-      if (firstActive == firstFree ) firstActive++;
-      if (firstActive == particles.length) firstActive = 0;
-    };
-    ParticlePool.prototype.update = function(deltaTime) {
-      var i;
-// update active particles
-      if (firstActive < firstFree) {
-        for (i = firstActive; i < firstFree; i++)
-          particles[i].update(deltaTime);
-      }
-      if (firstFree < firstActive) {
-        for (i = firstActive; i < particles.length; i++)
-          particles[i].update(deltaTime);
-        for (i = 0; i < firstFree; i++)
-          particles[i].update(deltaTime);
-      }
-// remove inactive particles
-      while (particles[firstActive].age >= duration && firstActive != firstFree) {
-        firstActive++;
-        if (firstActive == particles.length) firstActive = 0;
-      }
-    };
-    ParticlePool.prototype.draw = function(context, image) {
-// draw active particles
-      if (firstActive < firstFree) {
-        for (i = firstActive; i < firstFree; i++)
-          particles[i].draw(context, image);
-      }
-      if (firstFree < firstActive) {
-        for (i = firstActive; i < particles.length; i++)
-          particles[i].draw(context, image);
-        for (i = 0; i < firstFree; i++)
-          particles[i].draw(context, image);
-      }
-    };
-    return ParticlePool;
-  })();
-  /*
+                    update: function () {
+                        this.phase += this.frequency;
+                        value = this.offset + Math.sin(this.phase) * this.amplitude;
+                        return value;
+                    },
 
-  * Putting it all together
+                    value: function () {
+                        return value;
+                    }
+                };
 
-  */
-  (function(canvas) {
-    var context = canvas.getContext('2d'),
-            particles = new ParticlePool(settings.particles.length),
-            particleRate = settings.particles.length / settings.particles.duration, // particles/sec
-            time;
-// get point on heart with -PI <= t <= PI
-    function pointOnHeart(t) {
-      return new Point(
-              160 * Math.pow(Math.sin(t), 3),
-              130 * Math.cos(t) - 50 * Math.cos(2 * t) - 20 * Math.cos(3 * t) - 10 * Math.cos(4 * t) + 25
-      );
+            })();
 
-    }
+            // ========================================================================================
+            // Tendril hovertree.com
+            // ----------------------------------------------------------------------------------------
 
-// creating the particle image using a dummy canvas
+            function Tendril(options) {
+                this.init(options || {});
+            }
 
-    var image = (function() {
-      var canvas = document.createElement('canvas'),
-              context = canvas.getContext('2d');
-      canvas.width = settings.particles.size;
-      canvas.height = settings.particles.size;
-// helper function to create the path
-      function to(t) {
-        var point = pointOnHeart(t);
-        point.x = settings.particles.size / 2 + point.x * settings.particles.size / 350;
-        point.y = settings.particles.size / 2 - point.y * settings.particles.size / 350;
-        return point;
-      }
-// create the path
-      context.beginPath();
-      var t = -Math.PI;
-      var point = to(t);
-      context.moveTo(point.x, point.y);
-      while (t < Math.PI) {
-        t += 0.01; // baby steps!
-        point = to(t);
-        context.lineTo(point.x, point.y);
-      }
-      context.closePath();
-// create the fill
-      context.fillStyle = '#ff30c5';
-      // context.fillStyle = '#ea80b0';
-      context.fill();
-// create the image
-      var image = new Image();
-      image.src = canvas.toDataURL();
-      return image;
-    })();
-// render that thing!
-    function render() {
-// next animation frame
-      requestAnimationFrame(render);
-// update time
-      var newTime = new Date().getTime() / 1000,
-              deltaTime = newTime - (time || newTime);
-      time = newTime;
-// clear canvas
-      context.clearRect(0, 0, canvas.width, canvas.height);
-// create new particles
-      var amount = particleRate * deltaTime;
-      for (var i = 0; i < amount; i++) {
-        var pos = pointOnHeart(Math.PI - 2 * Math.PI * Math.random());
-        var dir = pos.clone().length(settings.particles.velocity);
-        particles.add(canvas.width / 2 + pos.x, canvas.height / 2 - pos.y, dir.x, -dir.y);
-      }
-// update and draw particles
-      particles.update(deltaTime);
-      particles.draw(context, image);
-    }
-// handle (re-)sizing of the canvas
-    function onResize() {
-      canvas.width = canvas.clientWidth;
-      canvas.height = canvas.clientHeight;
-    }
-    window.onresize = onResize;
-// delay rendering bootstrap
-    setTimeout(function() {
-      onResize();
-      render();
-    }, 10);
-  })(document.getElementById('pinkboard'));
-</script>
-<div class="namebox">
-  <h1>小孙同学&#10084;&#65039;小爱同学</h1>
-</div>
+            Tendril.prototype = (function () {
+
+                function Node() {
+                    this.x = 0;
+                    this.y = 0;
+                    this.vy = 0;
+                    this.vx = 0;
+                }
+
+                return {
+
+                    init: function (options) {
+
+                        this.spring = options.spring + (Math.random() * 0.1) - 0.05;
+                        this.friction = settings.friction + (Math.random() * 0.01) - 0.005;
+                        this.nodes = [];
+
+                        for (var i = 0, node; i < settings.size; i++) {
+
+                            node = new Node();
+                            node.x = target.x;
+                            node.y = target.y;
+
+                            this.nodes.push(node);
+                        }
+                    },
+
+                    update: function () {
+
+                        var spring = this.spring,
+                            node = this.nodes[0];
+
+                        node.vx += (target.x - node.x) * spring;
+                        node.vy += (target.y - node.y) * spring;
+
+                        for (var prev, i = 0, n = this.nodes.length; i < n; i++) {
+
+                            node = this.nodes[i];
+
+                            if (i > 0) {
+
+                                prev = this.nodes[i - 1];
+
+                                node.vx += (prev.x - node.x) * spring;
+                                node.vy += (prev.y - node.y) * spring;
+                                node.vx += prev.vx * settings.dampening;
+                                node.vy += prev.vy * settings.dampening;
+                            }
+
+                            node.vx *= this.friction;
+                            node.vy *= this.friction;
+                            node.x += node.vx;
+                            node.y += node.vy;
+
+                            spring *= settings.tension;
+                        }
+                    },
+
+                    draw: function () {
+
+                        var x = this.nodes[0].x,
+                            y = this.nodes[0].y,
+                            a, b;
+
+                        ctx.beginPath();
+                        ctx.moveTo(x, y);
+
+                        for (var i = 1, n = this.nodes.length - 2; i < n; i++) {
+
+                            a = this.nodes[i];
+                            b = this.nodes[i + 1];
+                            x = (a.x + b.x) * 0.5;
+                            y = (a.y + b.y) * 0.5;
+
+                            ctx.quadraticCurveTo(a.x, a.y, x, y);
+                        }
+
+                        a = this.nodes[i];
+                        b = this.nodes[i + 1];
+
+                        ctx.quadraticCurveTo(a.x, a.y, b.x, b.y);
+                        ctx.stroke();
+                        ctx.closePath();
+                    }
+                };
+
+            })();
+
+            // ----------------------------------------------------------------------------------------
+
+            function init(event) {
+
+                document.removeEventListener('mousemove', init);
+                document.removeEventListener('touchstart', init);
+
+                document.addEventListener('mousemove', mousemove);
+                document.addEventListener('touchmove', mousemove);
+                document.addEventListener('touchstart', touchstart);
+
+                mousemove(event);
+                reset();
+                loop();
+            }
+
+            function reset() {
+
+                tendrils = [];
+
+                for (var i = 0; i < settings.trails; i++) {
+
+                    tendrils.push(new Tendril({
+                        spring: 0.45 + 0.025 * (i / settings.trails)
+                    }));
+                }
+            }
+
+            function loop() {
+
+                if (!ctx.running) return;
+
+                ctx.globalCompositeOperation = 'source-over';
+                ctx.fillStyle = 'rgba(8,5,16,0.4)';
+                ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+                ctx.globalCompositeOperation = 'lighter';
+                ctx.strokeStyle = 'hsla(' + Math.round(hue.update()) + ',90%,50%,0.25)';
+                ctx.lineWidth = 1;
+
+                if (ctx.frame % 60 == 0) {
+                    console.log(hue.update(), Math.round(hue.update()), hue.phase, hue.offset, hue.frequency, hue.amplitude);
+                }
+
+                for (var i = 0, tendril; i < settings.trails; i++) {
+                    tendril = tendrils[i];
+                    tendril.update();
+                    tendril.draw();
+                }
+
+                ctx.frame++;
+                ctx.stats.update();
+                requestAnimFrame(loop);
+            }
+
+            function resize() {
+                ctx.canvas.width = window.innerWidth;
+                ctx.canvas.height = window.innerHeight;
+            }
+
+            function start() {
+                if (!ctx.running) {
+                    ctx.running = true;
+                    loop();
+                }
+            }
+
+            function stop() {
+                ctx.running = false;
+            }
+
+            function mousemove(event) {
+                if (event.touches) {
+                    target.x = event.touches[0].pageX;
+                    target.y = event.touches[0].pageY;
+                } else {
+                    target.x = event.clientX
+                    target.y = event.clientY;
+                }
+                event.preventDefault();
+            }
+
+            function touchstart(event) {
+                if (event.touches.length == 1) {
+                    target.x = event.touches[0].pageX;
+                    target.y = event.touches[0].pageY;
+                }
+            }
+
+            function keyup(event) {
+
+                switch (event.keyCode) {
+                    case 32:
+                        save();
+                        break;
+                    default:
+                    // console.log(event.keyCode); hovertree.com
+                }
+            }
+
+            function letters(id) {
+
+                var el = document.getElementById(id),
+                    letters = el.innerHTML.replace('&amp;', '&').split(''),
+                    heading = '';
+
+                for (var i = 0, n = letters.length, letter; i < n; i++) {
+                    letter = letters[i].replace('&', '&amp');
+                    heading += letter.trim() ? '<span class="letter-' + i + '">' + letter + '</span>' : '&nbsp;';
+                }
+
+                el.innerHTML = heading;
+                setTimeout(function () {
+                    el.className = 'transition-in';
+                }, (Math.random() * 500) + 500);
+            }
+
+            function save() {
+
+                if (!buffer) {
+
+                    buffer = document.createElement('canvas');
+                    buffer.width = screen.availWidth;
+                    buffer.height = screen.availHeight;
+                    buffer.ctx = buffer.getContext('2d');
+
+                    form = document.createElement('form');
+                    form.method = 'post';
+                    form.input = document.createElement('input');
+                    form.input.type = 'hidden';
+                    form.input.name = 'data';
+                    form.appendChild(form.input);
+
+                    document.body.appendChild(form);
+                }
+
+                buffer.ctx.fillStyle = 'rgba(8,5,16)';
+                buffer.ctx.fillRect(0, 0, buffer.width, buffer.height);
+
+                buffer.ctx.drawImage(canvas,
+                    Math.round(buffer.width / 2 - canvas.width / 2),
+                    Math.round(buffer.height / 2 - canvas.height / 2)
+                );
+
+                buffer.ctx.drawImage(logo,
+                    Math.round(buffer.width / 2 - logo.width / 4),
+                    Math.round(buffer.height / 2 - logo.height / 4),
+                    logo.width / 2,
+                    logo.height / 2
+                );
+
+                window.open(buffer.toDataURL(), 'wallpaper', 'top=0,left=0,width=' + buffer.width + ',height=' + buffer.height);
+
+                // form.input.value = buffer.toDataURL().substr(22);
+                // form.submit(); hovertree.com
+            }
+
+            window.requestAnimFrame = (function () {
+                return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function (fn) { window.setTimeout(fn, 1000 / 60) };
+            })();
+
+            window.onload = function () {
+
+                ctx = document.getElementById('canvas').getContext('2d');
+                ctx.stats = new Stats();
+                ctx.running = true;
+                ctx.frame = 1;
+
+                logo = new Image();
+                logo.src = 'ht' + 'tp://ho' + 'vertree.c' + 'om/themes/hvtimages/hvtlogo.p' + 'ng';
+
+                hue = new Oscillator({
+                    phase: Math.random() * Math.TWO_PI,
+                    amplitude: 85,
+                    frequency: 0.0015,
+                    offset: 285
+                });
+
+                letters('h1');
+                letters('h2');
+
+                document.addEventListener('mousemove', init);
+                document.addEventListener('touchstart', init);
+                document.body.addEventListener('orientationchange', resize);
+                window.addEventListener('resize', resize);
+                window.addEventListener('keyup', keyup);
+                window.addEventListener('focus', start);
+                window.addEventListener('blur', stop);
+
+                resize();
+
+                if (window.DEBUG) {
+
+                    var gui = new dat.GUI();
+
+                    // gui.add(settings, 'debug');
+                    settings.gui.add(settings, 'trails', 1, 30).onChange(reset);
+                    settings.gui.add(settings, 'size', 25, 75).onFinishChange(reset);
+                    settings.gui.add(settings, 'friction', 0.45, 0.55).onFinishChange(reset);
+                    settings.gui.add(settings, 'dampening', 0.01, 0.4).onFinishChange(reset);
+                    settings.gui.add(settings, 'tension', 0.95, 0.999).onFinishChange(reset);
+
+                    document.body.appendChild(ctx.stats.domElement);
+                }
+            };
+
+        })(window);
+
+    </script>
+    <div style="display:none">
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?3568997ab3a480640571c3fd2c7a949b";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </div>
 </body>
+
 </html>
