@@ -2,15 +2,15 @@
 
 ```
 python3 -m venv venv && source venv/bin/activate
-pip3 install turtle
+pip3 install opencv-python scipy
 ```
 
 # 运行
 
 ```
-python index.py
+python3 main.py
 ```
 
 # 效果
 
-![](./img/1.jpg)
+![](../../assets/img/python/010.png)
