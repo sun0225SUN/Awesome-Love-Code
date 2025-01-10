@@ -1,16 +1,16 @@
 # 安装所需库
 
 ```
-pip install pillow
-pip install matplotlib
-pip install numpy
+python3 -m venv venv && source venv/bin/activate
+pip3 install pillow matplotlib numpy 
 ```
 
 # 运行
 
 ```
-python 文件名.py
+python code/flower_{x}.py.py
 ```
+>  上面命令中的{x}表示可以替换为1-6的数值
 
 ![](./img/eg.png)
 

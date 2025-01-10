@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib import cm
 
 fig = plt.figure()
-ax = fig.gca(projection='3d')
+ax = fig.add_subplot(projection = '3d')
 [x, t] = np.meshgrid(
     np.array(range(25)) / 24.0,
     np.arange(0, 575.5, 0.5) / 575 * 17 * np.pi - 2 * np.pi)

@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 fig = plt.figure()
-ax = fig.gca(projection='3d')
+ax = fig.add_subplot(projection = '3d')
 # 将相位向后移动了6*pi
 [x, t] = np.meshgrid(
     np.array(range(25)) / 24.0,
