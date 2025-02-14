@@ -1,58 +1,121 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <title>小孙同学</title>
-  <meta name="language" content="zh-CN">
-  <meta name="title" content="小孙同学">
-  <meta name="github" content="https://github.com/sun0225SUN/Awesome-Love-Code">
-  <meta name="describe" content="收集不易，您的star是我坚持的动力，同时也欢迎各位PR哦! ">
-  <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/sun0225SUN/photos/img/20210715233345.png">
-  <style>
-    .container {
-      background: rgb(255, 192, 203);
-      color: white;
-      text-align: center;
-      width: 500px;
-      height: 500px;
-      margin-top: 100px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <title>小孙同学</title>
+    <meta name="language" content="zh-CN" />
+    <meta name="title" content="小孙同学" />
+    <meta
+      name="github"
+      content="https://github.com/sun0225SUN/Awesome-Love-Code"
+    />
+    <meta
+      name="describe"
+      content="收集不易，您的star是我坚持的动力，同时也欢迎各位PR哦! "
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn.jsdelivr.net/gh/sun0225SUN/photos/img/20210715233345.png"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background: rgb(255, 192, 203);
+      }
 
-    .word {
-      position: fixed;
-      text-align: center;
-      width: 500px;
-      height: 100px;
-      transform: translateY(-50%);
-      font-family: 楷体;
-      font-size: 40px;
-      color: #c70012;
-    }
-  </style>
-</head>
-  
+      .container {
+        color: white;
+        text-align: center;
+        width: 500px;
+        height: 600px;
+      }
+    </style>
+  </head>
 
-<body class="container"> 
-  <audio autoplay="autopaly" loop="loop" id="audios" preload="auto">
-    <source src="http://music.163.com/song/media/outer/url?id=1411358329.mp3" />
-  </audio>
-
-  <div class="word">浪漫至死不渝</div>
-
-  <canvas id="c"></canvas>
-    
-  <script>  
-    var b = document.body;
-    var c = document.getElementsByTagName('canvas')[0];
-    var a = c.getContext('2d');
-    document.body.clientWidth; 
-  </script>  
-  <script>  
-    with (m = Math) C = cos, S = sin, P = pow, R = random; c.width = c.height = f = 600; h = -250; function p(a, b, c) { if (c > 60) return [S(a * 7) * (13 + 5 / (.2 + P(b * 4, 4))) - S(b) * 50, b * f + 50, 625 + C(a * 7) * (13 + 5 / (.2 + P(b * 4, 4))) + b * 400, a * 1 - b / 2, a]; A = a * 2 - 1; B = b * 2 - 1; if (A * A + B * B < 1) { if (c > 37) { n = (j = c & 1) ? 6 : 4; o = .5 / (a + .01) + C(b * 125) * 3 - a * 300; w = b * h; return [o * C(n) + w * S(n) + j * 610 - 390, o * S(n) - w * C(n) + 550 - j * 350, 1180 + C(B + A) * 99 - j * 300, .4 - a * .1 + P(1 - B * B, -h * 6) * .15 - a * b * .4 + C(a + b) / 5 + P(C((o * (a + 1) + (B > 0 ? w : -w)) / 25), 30) * .1 * (1 - B * B), o / 1e3 + .7 - o * w * 3e-6] } if (c > 32) { c = c * 1.16 - .15; o = a * 45 - 20; w = b * b * h; z = o * S(c) + w * C(c) + 620; return [o * C(c) - w * S(c), 28 + C(B * .5) * 99 - b * b * b * 60 - z / 2 - h, z, (b * b * .3 + P((1 - (A * A)), 7) * .15 + .3) * b, b * .7] } o = A * (2 - b) * (80 - c * 2); w = 99 - C(A) * 120 - C(b) * (-h - c * 4.9) + C(P(1 - b, 7)) * 50 + c * 2; z = o * S(c) + w * C(c) + 700; return [o * C(c) - w * S(c), B * 99 - C(P(b, 7)) * 50 - c / 3 - z / 1.35 + 450, z, (1 - b / 1.2) * .9 + a * .1, P((1 - b), 20) / 4 + .05] } } setInterval('for(i=0;i<1e4;i++)if(s=p(R(),R(),i%46/.74)){z=s[2];x=~~(s[0]*f/z-h);y=~~(s[1]*f/z-h);if(!m[q=y*f+x]|m[q]>z)m[q]=z,a.fillStyle="rgb("+~(s[3]*h)+","+~(s[4]*h)+","+~(s[3]*s[3]*-80)+")",a.fillRect(x,y,1,1)}', 0)  
-  </script>  
-</body> 
- 
-
-</html> 
+  <body>
+    <div class="container">
+      <canvas id="c"></canvas>
+      <script>
+        var b = document.body;
+        var c = document.getElementsByTagName("canvas")[0];
+        var a = c.getContext("2d");
+        document.body.clientWidth;
+      </script>
+      <script>
+        with ((m = Math)) (C = cos), (S = sin), (P = pow), (R = random);
+        c.width = c.height = f = 600;
+        h = -250;
+        function p(a, b, c) {
+          if (c > 60)
+            return [
+              S(a * 7) * (13 + 5 / (0.2 + P(b * 4, 4))) - S(b) * 50,
+              b * f + 50,
+              625 + C(a * 7) * (13 + 5 / (0.2 + P(b * 4, 4))) + b * 400,
+              a * 1 - b / 2,
+              a,
+            ];
+          A = a * 2 - 1;
+          B = b * 2 - 1;
+          if (A * A + B * B < 1) {
+            if (c > 37) {
+              n = (j = c & 1) ? 6 : 4;
+              o = 0.5 / (a + 0.01) + C(b * 125) * 3 - a * 300;
+              w = b * h;
+              return [
+                o * C(n) + w * S(n) + j * 610 - 390,
+                o * S(n) - w * C(n) + 550 - j * 350,
+                1180 + C(B + A) * 99 - j * 300,
+                0.4 -
+                  a * 0.1 +
+                  P(1 - B * B, -h * 6) * 0.15 -
+                  a * b * 0.4 +
+                  C(a + b) / 5 +
+                  P(C((o * (a + 1) + (B > 0 ? w : -w)) / 25), 30) *
+                    0.1 *
+                    (1 - B * B),
+                o / 1e3 + 0.7 - o * w * 3e-6,
+              ];
+            }
+            if (c > 32) {
+              c = c * 1.16 - 0.15;
+              o = a * 45 - 20;
+              w = b * b * h;
+              z = o * S(c) + w * C(c) + 620;
+              return [
+                o * C(c) - w * S(c),
+                28 + C(B * 0.5) * 99 - b * b * b * 60 - z / 2 - h,
+                z,
+                (b * b * 0.3 + P(1 - A * A, 7) * 0.15 + 0.3) * b,
+                b * 0.7,
+              ];
+            }
+            o = A * (2 - b) * (80 - c * 2);
+            w =
+              99 -
+              C(A) * 120 -
+              C(b) * (-h - c * 4.9) +
+              C(P(1 - b, 7)) * 50 +
+              c * 2;
+            z = o * S(c) + w * C(c) + 700;
+            return [
+              o * C(c) - w * S(c),
+              B * 99 - C(P(b, 7)) * 50 - c / 3 - z / 1.35 + 450,
+              z,
+              (1 - b / 1.2) * 0.9 + a * 0.1,
+              P(1 - b, 20) / 4 + 0.05,
+            ];
+          }
+        }
+        setInterval(
+          'for(i=0;i<1e4;i++)if(s=p(R(),R(),i%46/.74)){z=s[2];x=~~(s[0]*f/z-h);y=~~(s[1]*f/z-h);if(!m[q=y*f+x]|m[q]>z)m[q]=z,a.fillStyle="rgb("+~(s[3]*h)+","+~(s[4]*h)+","+~(s[3]*s[3]*-80)+")",a.fillRect(x,y,1,1)}',
+          0
+        );
+      </script>
+    </div>
+  </body>
+</html>
